@@ -1,0 +1,81 @@
+<!-- Demo Layout for Bootstrap (with cards) -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Portfolio</title>
+
+    <!-- Bring in the bootstrap CSS and user defined style.css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class ="main_content" onload="openContent('contactInfo')">
+    <!-- Static navbar -->
+    <div class="bg-white">
+        <nav class="navbar ml-lg-5 py-0 pr-lg-5 d-flex justify-content-center justify-content-md-between  nav-tabs">
+            <div class="p-4 nav-item text-white font-weight-bold nav-heading">Shankarri Ragavan</div>
+            <div class="navbar-right mr-md-5  nav-item ">
+                <form class="form-inline">
+                    <a class="nav-link text-secondary" onclick="openContent('indexInfo')" >About</a>
+                    <a class="nav-link text-secondary" onclick="openContent('portfolioInfo')">Portfolio</a>
+                    <a class="nav-link text-secondary" onclick="openContent('contactInfo')">Contact</a>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-- Main Body goes in Container -->
+    <div class="container mx-0 px-0 my-2 my-md-4 mx-lg-5" id="indexInfo">
+        <div class="row mx-0">
+            <div class="col-sm-12 bg-white">
+                <h3 class="font-weight-bold py-3"> About Me </h3>
+                <!-- Random paragraph from Loem ipsum -->
+                <img src="Images/Profile_Picture.jpeg" class="profile_img pt-3 px-5 px-md-auto img-fluid" alt="Shankarri Ragavan" />
+                <p>Sesame snaps ice cream toffee. Jujubes tootsie roll sweet icing candy. Gummies cookie wafer halvah
+                    apple pie.Candy canes apple pie jelly oat cake. </p>
+                <p>Carrot cake biscuit I love cookie muffin. Sugar plum carrot cake I love cookie candy canes fruitcake
+                    I love. Ice cream cheesecake ice cream sweet roll I love topping I love fruitcake tootsie roll.
+                    Pudding muffin carrot cake cheesecake marshmallow danish wafer soufflé. </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Inframe the other 2 tab content in the index page itself -->
+    <div class="embed-responsive embed-responsive-16by9" id="portfolioInfo">
+        <iframe class="embed-responsive-item" src="portfolio.html"></iframe>
+    </div>
+    
+    <div class="embed-responsive embed-responsive-16by9" id="contactInfo">
+        <iframe class="embed-responsive-item" src="contact.html"></iframe>
+    </div>
+    <script>
+        // Function for displaying content only for selected Tab
+        function openContent(tabName) {
+            if (tabName == "indexInfo") {
+                document.getElementById("indexInfo").style.display = "block";
+                document.getElementById("portfolioInfo").style.display = "none";
+                document.getElementById("contactInfo").style.display = "none";
+            }
+            if (tabName == "portfolioInfo") {
+                var pf = document.getElementById("portfolioInfo");
+                document.getElementById("portfolioInfo").style.display = "block";
+                document.getElementById("indexInfo").style.display = "none";
+                document.getElementById("contactInfo").style.display = "none";
+            }
+            if (tabName == "contactInfo") {
+                document.getElementById("contactInfo").style.display = "block";
+                document.getElementById("indexInfo").style.display = "none";
+                document.getElementById("portfolioInfo").style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+<!-- Seperate Footer -->
+<footer>
+    <p class="p-2"> Copyright &copy;</p>
+</footer>
+
+</html>

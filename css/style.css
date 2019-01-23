@@ -1,0 +1,102 @@
+/* Style for main content */
+.main_content {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #777;
+    background: url("../images/concrete_seamless.png");
+}
+/* Heading inside Navigation bar */
+.nav-heading {
+    background-color: #4aaaa5;
+    font-size: 25px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+}
+
+/* Height of Portfolio page */
+
+#portfolioInfo
+{
+    height: 200vh;       
+}
+
+/* Height of Index and contact page */
+
+#indexInfo, #contactInfo
+{
+    height: 110vh;       
+}
+
+/* All 3 pages heading style */
+h3 
+{
+    color: #4aaaa5;
+    border-bottom: 3px solid #ddd;
+}
+
+/* Profile Page Image style  */
+.profile_img
+{
+    min-width: 250px;
+    max-height: 250px;
+    float: left;
+    padding-right: 5%;
+    padding-bottom: 20px;
+}
+
+/* Style  for all rows */
+.row
+{
+    padding: .5rem 1rem;
+    max-width: 700px;
+    position: relative;
+}
+/*  Image in portfolio page */
+.portfolio_Img, .col-md-6
+{
+    height: 220px;
+    width: 95%;
+}
+/*  Text placement over Image in portfolio page */
+.imgText
+{
+    position: absolute;
+    bottom:10%;
+    width: 87%;
+    background-color: #4aaaa5;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: white;  
+}
+/* width for input element in Contact page */
+#name, #email, #message
+{
+    width: 100%;
+}
+
+/* Style for Submit button on contact page */
+#submitbtn
+{
+    background-color: #4aaaa5;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+}
+
+/* Style for Footer  */
+footer 
+{
+    width: 100%;
+    height: 8%; 
+    text-align: center;
+    background-color: #666666;
+    color: white;
+    position: fixed;
+    left:0%;
+    bottom : 0%;
+    font-size: 12px;
+    border-top: 8px solid #4aaaa5;
+}
